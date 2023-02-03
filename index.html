@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam 2</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div>
+        <div class="blackSideBar">
+            <div class="allLists pt-2 h-75">
+                <ul>
+                    <li>
+                        <a href="#">Now playing</a>
+                    </li>
+                    <li>
+                        <a href="#">Popular</a>
+                    </li>
+                    <li>
+                        <a href="#">Top Rated</a>
+                    </li>
+                    <li>
+                        <a href="#">Trending</a>
+                    </li>
+                    <li>
+                        <a href="#">Upcoming</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="text-white w-75 m-auto h-25 pt-5">
+                <i class="ms-3 fab fa-facebook-f"></i>
+                <i class="ms-3 fab fa-twitter"></i>
+                <i class="ms-3 fas fa-globe"></i>
+                <br><br>
+                <p>Copyright Â© 2019 All Rights Reserved.</p>
+            </div>
+
+        </div>
+        <div class="whiteSideBar">
+            <div class="w-50 h-25 mx-auto mt-3">
+                <img src="Images/logo.png" class="img-fluid">
+            </div>
+            <div class="closeBtn h-50 w-50 m-auto d-flex align-items-center">
+                <i class="fas fa-align-justify m-auto"></i>
+            </div>
+            <div class="text-center w-50 m-auto h-25 d-flex flex-column justify-content-end pb-5">
+                <i class="fas fa-globe mb-3"></i>
+                <i class="fas fa-share-alt"></i>
+            </div>
+        </div>
+    </div>
+
+    <section class="allMovies">
+        <div class="container extraPadding mt-5 w-75">
+            <div class="row">
+                <div class="col-md-6 mb-5">
+                    <input id="searchMovie1" type="text" placeholder="get movies by word..."
+                        class="form-control bg-transparent">
+                </div>
+                <div class="col-md-6 mb-5">
+                    <input id="searchMovie2" type="text" placeholder="Search..." class="form-control bg-transparent">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 col-10 mx-auto col-lg-9">
+                <div class="container extraPadding text-center">
+
+                    <div class="row text-center" id="printMovies">
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section id="contact" class="container extraPadding w-75 mx-auto py-5 my-5">
+        <h2 class="text-light my-5">Contact Us...</h2>
+
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div>
+                    <input id="myName" class="form-control bg-transparent" type="text" placeholder="Enter Your Name">
+                    <div class="alert alert-danger" id="namealert" role="alert">
+                        Your Name is not valid
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div>
+                    <input id="myEmail" class="form-control bg-transparent" type="email" placeholder="Enter Email">
+                    <div class="alert alert-danger" id="emailalert" role="alert">
+                        entre valid email
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div>
+                    <input id="myPhone" class="form-control bg-transparent" placeholder="Enter Phone">
+                    <div class="alert alert-danger" id="phonealert" role="alert">
+                        entre valid phone
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div>
+                    <input id="myAge" class="form-control bg-transparent" placeholder="Enter Age">
+                    <div class="alert alert-danger" id="agealert" role="alert">
+                        entre valid Age
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div>
+                    <input id="myPass" class="form-control bg-transparent" type="password" placeholder="Enter Password">
+                    <div class="alert alert-danger" id="passalert" role="alert">
+                        entre valid password *Minimum eight characters, at least one letter and one number:*
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div>
+                    <input id="myRePass" class="form-control bg-transparent" type="password"
+                        placeholder="Enter RePassword">
+                    <div class="alert alert-danger" id="repassalert" role="alert">
+                        entre valid Repassword
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="btn btn-outline-danger">Submit</button>
+    </section>
+
+
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/mine.js"></script>
+</body>
+
+</html>
